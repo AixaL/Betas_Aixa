@@ -3,36 +3,117 @@
     margin: 0;
     padding: 0;
 }
-/*:root{
+:root{
 	--verdeClaro:#15E5A9 ;
 	--azul:#706EEE;
 	--azulOscuro:#4E8596;
 	--amarillo:#F0A931;
 	--amarilloClaro:#F5C06B;
 	--gris:#D4D9DE;
-}*/
+    /*--fondo:#EFF9F9;*/
+    --fondo:#FAFAFD;
+    --normal: 'Mukta Malar', sans-serif;
+    --titulo:'Arimo', sans-serif;
+    --colorTitulo: #666666;
+}
+body{
+    background: #F1F2F9;
+}
 .login
 {
     display: flex;
-    /*width: 50vw;*/
-    width: 50rem;
-    /*height: 60vh;*/
-    height: 25rem;
+    width: 60rem;
+    height: 30rem;
     margin: auto;
-    margin-top: calc((100% - 25rem)/8);
-
-    border-radius: 30px;
-    background: red;
-
+    /*border-radius: 10px;*/
+    margin-top: 6rem;
     align-self: center;
     justify-content: left;
     align-items: center;
+    box-shadow: -2px 7px 20px -9px rgba(122,122,122,1);
+}
+.imagen{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+   background: white;
+    /*border-radius: 30px 0px 0px 30px;*/
+     
+}
+.imag{
+    width: 100%;
+    height: 100%;
+     background: url('../imagenes/inicio.png');
+    background-size: cover;
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
 }
 .inicio{
 	width:50%;
 	height: 100%;
-	border-radius: 30px 0 0 30px;
 	float: left;
 	position: relative;
-	background: url();
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
 }
+.inicio form{
+    width: 100%;
+    height: 70%;
+    padding: 10%;
+    position: relative;
+    box-sizing: border-box;
+     /*margin-top: 20%;*/
+     float: left;
+
+}
+    .inicio input{
+        width: 15rem;
+        height: 2rem;
+        font-size: 1rem;
+        margin-top: 2.3rem;
+        border-radius: 5px;
+        border-style: none;
+        background: var(--fondo);
+        outline: none;
+        padding: 5%;
+        box-sizing: border-box;
+        font-family: var(--normal);
+        line-height: 2rem;
+    }
+    .inicio h1{
+        font-family: var(--titulo);
+        color: var(--colorTitulo);
+    }
+    .continuar{
+        width: 7rem !important;
+        background: var(--verdeClaro) !important;
+        text-align: center;
+        padding: 0 !important;
+        height: 1.7rem !important;
+        padding: 3px;
+        box-sizing: border-box;
+        color: var(--colorTitulo);
+    }
+    .regis{
+        width: 100%;
+        height: 30%;
+        position: relative;
+        float: left;
+        font-size: 1rem;
+        font-family: var(--normal);
+        padding-top: 10%;
+    }
+    .inicio p{
+        position: relative;
+        float: left;
+        width: 100%;
+        color: gray;
+    }
+    a{
+        color: var(--azul);
+    }
